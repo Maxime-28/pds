@@ -1,0 +1,63 @@
+\documentclass[10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{textcomp}
+
+
+\title{INFO-F-308 : Application Vivre ensemble - Plan de travail}
+\author{Abdelkefi Amin \and Baudoux Nicolas \and Bauwin Lucie \and Boulif Ilias \and Dewit Maxime \and  Minhas Prabhdeep \and Requena Carlos \and Van Palm Geoffrey \and Zhou Mi}
+\date{Année académique 2016-2017}
+
+
+\begin{document}
+ 
+ \maketitle
+ 
+ \section{Calendrier d'avancement}
+  \begin{tabular}{ l | c | r }
+   Tâche & Equipe & Date \\ 
+  \end{tabular}
+ 
+ \section{Description des tâches}
+  \subsection{Base de données}
+   \subsubsection{Quelque chose}
+   
+  \subsection{Back-end général}
+   \subsubsection{Algorithme de match}
+    L’algorithme affichant les personnes à rencontrer se basera sur les informations fournies lors des questionnaires remplis précédemment
+    par les utilisateurs. 
+    Il établira un panel de 5 personnes ayant un pourcentage de différences plus ou moins grand.
+    Nous définirons 5 intervalles de pourcentage (0\%-20\%, 21\%-40\%, 41\%-60\%, 61\%-80\% et 81\%-100\% de différences).   
+    Dans le cas où l’algorithme est dans l’incapacité de trouver au moins une personne appartenant à un interval précis,
+    il est prévu d’agrandir cet interval afin de faire correspondre une autre personne.
+    Le choix des personnes se ferait aussi de manière à ne pas pouvoir retomber sur une personne déjà rencontrée. 
+   \subsubsection{Limitation du nombre de choix}
+    Par jour, l'utilisateur aura la possibilité de choisir parmi 5 fiches de personnes pour désigner la personne qu'il aimerait rencontrer. 
+    Ces 5 fiches sont données par l'algorithmes de match présénté ci-dessus. 
+    Celui-ci renvoie des personnes avec un pourcentage diffèrent pour permettre à l'utilisateur de choisir parmi des personnes ayant de 
+    nombreux points en commun ou non.    
+
+    Sur chaque fiche, l'utilisateur verra l'avatar de la personne accompagné de son surnom, de son niveau dans le jeu, ainsi que le 
+    pourcentage de ressemblance avec celui-ci  
+    Ce sont donc les informations disponibles sur la fiche qui permettront à l'utilisateur de choisir sa prochaine rencontre.
+
+    Une fois la personne choisie, cette-dernière recevra une notification pour lui demander si elle accepte cette rencontr ou non.
+   \subsubsection{Classement}
+    Après avoir effectué une rencontre, l'utilisateur sera crédité d'un montant de points. Le nombre de points étant en lien avec le
+    pourcentage de différence (plus de différences, plus de points. La somme des points donnera à l'utilisateur une position dans 
+    un classement. L'accumulation de ces points donnera accès à des "niveaux.
+
+    L'équipe Back-end implémentera donc différentes fonctions calculant les points marqués, actualisant le nombre total de points des
+    utilisateurs et leur niveau.
+   \subsubsection{Confirmation de rencontre}
+    Afin de confirmer une rencontre entre deux utilisateurs, ceux-ci devront remplir un quiz supplémentaire. 
+    Ce quiz a pour but de savoir si l'image qu'ils s'étaient fait l'un de l'autre est correcte. 
+
+    Ensuite, ils reçoivent chacun un code et doivent se le partager pour valider la rencontre. 
+    Une fois la rencontre validée, ils sont ajoutés dans leur liste d'amis respective où ils auront accès à une messagerie 
+    instantanée et au profil de l'utilisateur rencontré afin de conserver un contact si la rencontre leur a plu. 
+  \subsection{Front-end}
+ 
+\end{document}
