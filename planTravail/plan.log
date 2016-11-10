@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.23)  10 NOV 2016 22:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.23)  10 NOV 2016 23:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -430,6 +430,10 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/preprint/fullpage.sty
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip46
 ) (./plan.aux)
 \openout1 = `plan.aux'.
 
@@ -465,33 +469,27 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 20.
+(Font)              <7> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 20.
-
-Overfull \hbox (6.02905pt too wide) in paragraph at lines 51--53
-[]\T1/cmr/m/n/10 L'équipe Back-end im-plé-men-tera donc dif-fé-rentes fonc-tion
-s cal-cu-lant les points
- []
-
-[2] [3] (./plan.aux) ) 
+(Font)              <5> on input line 21.
+ [2] [3] (./plan.aux) ) 
 Here is how much of TeX's memory you used:
- 2049 strings out of 494999
- 25800 string characters out of 6180228
- 78429 words of memory out of 5000000
- 5287 multiletter control sequences out of 15000+600000
+ 2069 strings out of 494999
+ 26157 string characters out of 6180228
+ 82429 words of memory out of 5000000
+ 5303 multiletter control sequences out of 15000+600000
  11766 words of font info for 30 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  23i,6n,23p,188b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/nicolas/.texmf-var/fonts/pk/ljfour/jknappen/ec/ec
-bx1000.600pk> </home/nicolas/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.60
-0pk> </home/nicolas/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </ho
-me/nicolas/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/nicola
-s/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/nicolas/.texmf-
-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk>
-Output written on plan.pdf (3 pages, 66847 bytes).
+ </home/nicolas/.texmf-var/fonts/pk/ljfour/jknappen/ec/e
+cbx1000.600pk> </home/nicolas/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.6
+00pk> </home/nicolas/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </h
+ome/nicolas/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/nicol
+as/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/nicolas/.texmf
+-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk>
+Output written on plan.pdf (3 pages, 68928 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
+ 246 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
