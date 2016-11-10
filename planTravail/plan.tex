@@ -4,6 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
 \usepackage{textcomp}
+%\usepackage{fullpage}
 
 
 \title{INFO-F-308 : Application Vivre ensemble \\ Plan de travail}
@@ -20,9 +21,7 @@
    Tâche & Equipe & Date \\ 
   \end{tabular}
  
- \section{Description des tâches}
-  \subsection{Base de données}
-   \subsubsection{Quelque chose}
+ \section{Description des tâches} 
    
   \subsection{Back-end général}
    \subsubsection{Algorithme de match}
@@ -58,6 +57,17 @@
     Ensuite, ils reçoivent chacun un code et doivent se le partager pour valider la rencontre. 
     Une fois la rencontre validée, ils sont ajoutés dans leur liste d'amis respective où ils auront accès à une messagerie 
     instantanée et au profil de l'utilisateur rencontré afin de conserver un contact si la rencontre leur a plu. 
+    
+  \subsection{Base de données}
+   La base de donnée sera stockée en ligne sur un serveur à distance, en langage SQL. 
+   Celle-ci sera composée de différentes informations sur les utilisateurs (nom, prénom, sexe, études, loisirs, ...).
+   
+   A l'inscription, chaque utilisateur remplit un formulaire de base, a une liste d'amis vide et génère un score de 0.
+   Un pseudo aléatoire lui est également attribué. Les utilisateurs de cette application ont la possibilité de modifier ses données personnelles.
+   Après chaque rencontre, les données sont actualisées. Si le score est assez élevé, le joueur augmente de niveau.
+
+   De plus, la base de données est l'endroit où sont enregistrés les lieux de rencontre, ainsi que les 3 choix de personnes à rencontrer par jour.
+   
   \subsection{Front-end}
    Dans l'optique de donner un visage à notre application, nous allons utiliser divers frameworks tels que Bootstrap et React.
 
