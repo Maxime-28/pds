@@ -63,17 +63,17 @@
     Par jour, l'utilisateur aura la possibilité de choisir parmi 5 fiches de personnes pour désigner la personne qu'il aimerait rencontrer. 
     Ces 5 fiches sont données par l'algorithmes de match présénté ci-dessus. 
     Celui-ci renvoie des personnes avec un pourcentage diffèrent pour permettre à l'utilisateur de choisir parmi des personnes ayant de 
-    nombreux points en commun ou non.    
+    nombreux points en commun ou non.
 
     Sur chaque fiche, l'utilisateur verra l'avatar de la personne accompagné de son surnom, de son niveau dans le jeu, ainsi que le 
-    pourcentage de ressemblance avec celui-ci  
+    pourcentage de ressemblance avec celui-ci.
     Ce sont donc les informations disponibles sur la fiche qui permettront à l'utilisateur de choisir sa prochaine rencontre.
 
-    Une fois la personne choisie, cette-dernière recevra une notification pour lui demander si elle accepte cette rencontr ou non.
+    Une fois la personne choisie, cette-dernière recevra une notification pour lui demander si elle accepte cette rencontre ou non.
    \subsubsection{Classement}
     Après avoir effectué une rencontre, l'utilisateur sera crédité d'un montant de points. Le nombre de points étant en lien avec le
-    pourcentage de différence (plus de différences, plus de points. La somme des points donnera à l'utilisateur une position dans 
-    un classement. L'accumulation de ces points donnera accès à des "niveaux.
+    pourcentage de différence (plus de différences, plus de points). La somme des points donnera à l'utilisateur une position dans 
+    un classement. L'accumulation de ces points donnera accès à des "niveaux".
 
     L'équipe Back-end implémentera donc différentes fonctions calculant les points marqués, actualisant le nombre total de points des
     utilisateurs et leur niveau.
@@ -90,15 +90,15 @@
    Celle-ci sera composée de différentes informations sur les utilisateurs (nom, prénom, sexe, études, loisirs, ...).
    
    A l'inscription, chaque utilisateur remplit un formulaire de base, a une liste d'amis vide et génère un score de 0.
-   Un pseudo aléatoire lui est également attribué. Les utilisateurs de cette application ont la possibilité de modifier ses données personnelles.
+   Un pseudo aléatoire lui est également attribué. Les utilisateurs de cette application ont la possibilité de modifier leurs données personnelles.
    Après chaque rencontre, les données sont actualisées. Si le score est assez élevé, le joueur augmente de niveau.
 
-   De plus, la base de données est l'endroit où sont enregistrés les lieux de rencontre, ainsi que les 3 choix de personnes à rencontrer par jour.
+   De plus, la base de données est l'endroit où sont enregistrés les lieux de rencontre, ainsi que les 5 choix de personnes à rencontrer par jour.
    
   \subsection{Front-end}
    Dans l'optique de donner un visage à notre application, nous allons utiliser divers frameworks tels que Bootstrap et React.
 
-   La collection d'outils Bootstrap nous permet de créer des interfaces 'mobile-first' avec 'responsiveness', c'est à dire, qui réagit bien
+   La collection d'outils Bootstrap nous permet de créer des interfaces 'mobile-first' avec 'responsiveness', c'est à dire, qui réagissent bien
    aux différents appareils et leur caractéristiques telles que la résolution.
 
    React est une librarie JavaScript qui facilite la construction des composants web.
