@@ -1,0 +1,30 @@
+{
+    "name": "vivons-ensemble",
+    "version": "1.0.0",
+    "description": "ULB app",
+    "main": "index.js",
+    "devDependencies": {},
+    "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+	"type": "git",
+	"url": "git+https://github.com/carlosgeos/pds.git"
+    },
+    "keywords": [
+	"ulb",
+	"meeting",
+	"match",
+	"stereotype"
+    ],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+	"url": "https://github.com/carlosgeos/pds/issues"
+    },
+    "homepage": "https://github.com/carlosgeos/pds#readme",
+    "dependencies": {
+	"bootstrap-sass": "^3.3.7",
+	"react": "^15.3.2"
+    }
+}
