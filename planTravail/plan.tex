@@ -13,7 +13,7 @@
 
 
 \begin{document}
- 
+
  \maketitle
  \newpage
  \section{Planning provisoire}
@@ -44,67 +44,67 @@
    Evaluation du prototype & & 19/12/17\\
    Démonstration & & 27/02/17\\
    Printemps des sciences & & 20-26/03/17\\
-   Evaluation finale & & 24/04/17\\ 
+   Evaluation finale & & 24/04/17\\
   \end{tabular}
   \end{center}
- 
- \section{Description des tâches} 
-   
+
+ \section{Description des tâches}
+
   \subsection{Back-end général}
    \subsubsection{Algorithme de match}
     L’algorithme affichant les personnes à rencontrer se basera sur les informations fournies lors des questionnaires remplis précédemment
-    par les utilisateurs. 
+    par les utilisateurs.
     Il établira un panel de 5 personnes ayant un pourcentage de différences plus ou moins grand.
-    Nous définirons 5 intervalles de pourcentage (0\%-20\%, 21\%-40\%, 41\%-60\%, 61\%-80\% et 81\%-100\% de différences).   
+    Nous définirons 5 intervalles de pourcentage (0\%-20\%, 21\%-40\%, 41\%-60\%, 61\%-80\% et 81\%-100\% de différences).
     Dans le cas où l’algorithme est dans l’incapacité de trouver au moins une personne appartenant à un interval précis,
     il est prévu d’agrandir cet interval afin de faire correspondre une autre personne.
-    Le choix des personnes se ferait aussi de manière à ne pas pouvoir retomber sur une personne déjà rencontrée. 
+    Le choix des personnes se ferait aussi de manière à ne pas pouvoir retomber sur une personne déjà rencontrée.
    \subsubsection{Limitation du nombre de choix}
-    Par jour, l'utilisateur aura la possibilité de choisir parmi 5 fiches de personnes pour désigner la personne qu'il aimerait rencontrer. 
-    Ces 5 fiches sont données par l'algorithmes de match présénté ci-dessus. 
-    Celui-ci renvoie des personnes avec un pourcentage diffèrent pour permettre à l'utilisateur de choisir parmi des personnes ayant de 
+    Par jour, l'utilisateur aura la possibilité de choisir parmi 5 fiches de personnes pour désigner la personne qu'il aimerait rencontrer.
+    Ces 5 fiches sont données par l'algorithmes de match présénté ci-dessus.
+    Celui-ci renvoie des personnes avec un pourcentage diffèrent pour permettre à l'utilisateur de choisir parmi des personnes ayant de
     nombreux points en commun ou non.
 
-    Sur chaque fiche, l'utilisateur verra l'avatar de la personne accompagné de son surnom, de son niveau dans le jeu, ainsi que le 
+    Sur chaque fiche, l'utilisateur verra l'avatar de la personne accompagné de son surnom, de son niveau dans le jeu, ainsi que le
     pourcentage de ressemblance avec celui-ci.
     Ce sont donc les informations disponibles sur la fiche qui permettront à l'utilisateur de choisir sa prochaine rencontre.
 
     Une fois la personne choisie, cette-dernière recevra une notification pour lui demander si elle accepte cette rencontre ou non.
    \subsubsection{Classement}
     Après avoir effectué une rencontre, l'utilisateur sera crédité d'un montant de points. Le nombre de points étant en lien avec le
-    pourcentage de différence (plus de différences, plus de points). La somme des points donnera à l'utilisateur une position dans 
+    pourcentage de différence (plus de différences, plus de points). La somme des points donnera à l'utilisateur une position dans
     un classement. L'accumulation de ces points donnera accès à des "niveaux".
 
     L'équipe Back-end implémentera donc différentes fonctions calculant les points marqués, actualisant le nombre total de points des
     utilisateurs et leur niveau.
    \subsubsection{Confirmation de rencontre}
-    Afin de confirmer une rencontre entre deux utilisateurs, ceux-ci devront remplir un quiz supplémentaire. 
-    Ce quiz a pour but de savoir si l'image qu'ils s'étaient fait l'un de l'autre est correcte. 
+    Afin de confirmer une rencontre entre deux utilisateurs, ceux-ci devront remplir un quiz supplémentaire.
+    Ce quiz a pour but de savoir si l'image qu'ils s'étaient fait l'un de l'autre est correcte.
 
-    Ensuite, ils reçoivent chacun un code et doivent se le partager pour valider la rencontre. 
-    Une fois la rencontre validée, ils sont ajoutés dans leur liste d'amis respective où ils auront accès à une messagerie 
-    instantanée et au profil de l'utilisateur rencontré afin de conserver un contact si la rencontre leur a plu. 
-    
+    Ensuite, ils reçoivent chacun un code et doivent se le partager pour valider la rencontre.
+    Une fois la rencontre validée, ils sont ajoutés dans leur liste d'amis respective où ils auront accès à une messagerie
+    instantanée et au profil de l'utilisateur rencontré afin de conserver un contact si la rencontre leur a plu.
+
   \subsection{Base de données}
-   La base de donnée sera stockée en ligne sur un serveur à distance, en langage SQL. 
+   La base de donnée sera stockée en ligne sur un serveur à distance, en langage SQL.
    Celle-ci sera composée de différentes informations sur les utilisateurs (nom, prénom, sexe, études, loisirs, ...).
-   
+
    A l'inscription, chaque utilisateur remplit un formulaire de base, a une liste d'amis vide et génère un score de 0.
    Un pseudo aléatoire lui est également attribué. Les utilisateurs de cette application ont la possibilité de modifier leurs données personnelles.
    Après chaque rencontre, les données sont actualisées. Si le score est assez élevé, le joueur augmente de niveau.
 
    De plus, la base de données est l'endroit où sont enregistrés les lieux de rencontre, ainsi que les 5 choix de personnes à rencontrer par jour.
-   
+
   \subsection{Front-end}
-   Dans l'optique de donner un visage à notre application, nous allons utiliser divers frameworks tels que Bootstrap et React.
+   Dans l'optique de donner un visage à notre application, nous allons utiliser divers frameworks tels que Bootstrap et Ember.
 
    La collection d'outils Bootstrap nous permet de créer des interfaces 'mobile-first' avec 'responsiveness', c'est à dire, qui réagissent bien
    aux différents appareils et leur caractéristiques telles que la résolution.
 
-   React est une librarie JavaScript qui facilite la construction des composants web.
+   Ember est une librarie JavaScript qui facilite la construction des composants web.
 
    Pour le système de communication, le service externe Twilio sera utilisé. Twilio offre la possibilité aux utilisateurs de communiquer
    entre eux à travers leur API, en utilisant leur infrastructure.
 
-   Le système d'authentification bénéficiera des données de l'ULB pour restreindre l'accès à la communauté universitaire. 
+   Le système d'authentification bénéficiera des données de l'ULB pour restreindre l'accès à la communauté universitaire.
 \end{document}
