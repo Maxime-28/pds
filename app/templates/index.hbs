@@ -1,5 +1,3 @@
-Person =
-
 {{#each model as |user|}}
-   {{user.id}}
+   {{user-comp name=user.name surname=user.surname region=user.region age=user.age email=user.email photo=user.photo birthday=user.birthday phone=user.phone}}
 {{/each}}

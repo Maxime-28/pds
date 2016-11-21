@@ -1,4 +1,18 @@
-<h3>Hello from foo!</h3>
-<p>{{name}}</p>
-despues del name
-{{yield}}
+<div class="col-md-4">
+   <div class="panel panel-default">
+      <div class="panel-heading">
+	 <h3 class="panel-title text-center">{{name}} {{surname}}</h3>
+      </div>
+      <div class="panel-body text-center">
+	 <img src="{{photo}}" alt="profile picture" class="img-circle"/>
+	 <hr/>
+	 <ul class="text-left" style="list-style:none">
+	    <li><span class="glyphicon glyphicon-user"></span>Age: {{age}}</li>
+	    <li><span class="glyphicon glyphicon-map-marker"></span>Region: {{region}}</li>
+	    <li><span class="glyphicon glyphicon-gift"></span>Birthday: {{birthday}}</li>
+	    <li><span class="glyphicon glyphicon-earphone"></span>Phone number: {{phone}}</li>
+	    <li><span class="glyphicon glyphicon-envelope"></span>Email: {{email}}</li>
+	 </ul>
+      </div>
+   </div>
+</div>
