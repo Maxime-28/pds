@@ -3,20 +3,21 @@ import ApplicationSerializer from './application';
 export default ApplicationSerializer.extend({
   primaryKey: 'name',
   normalizeResponse(store, type, payload) {
+    var realdata = payload.results[0];
     return {
       data: {
-	id: payload.name,
+	id: realdata.name.first.capitalize(),
         type: type.modelName,
 	attributes: {
-	  name: payload.name,
-          surname: payload.surname,
-	  gender: payload.gender,
-	  region: payload.region,
-	  age: payload.age,
-	  phone: payload.phone,
-	  birthday: payload.birthday.dmy,
-	  email: payload.email,
-	  photo: payload.photo
+	  name: realdata.name.first,
+          surname: realdata.name.last,
+	  gender: realdata.gender,
+	  region: realdata.nat,
+	  age: realdata.login.username,
+	  phone: realdata.phone,
+	  birthday: realdata.dob,
+	  email: realdata.email,
+	  photo: realdata.picture.large
 	}
       }
     };
