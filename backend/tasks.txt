@@ -1,0 +1,8 @@
+-Algorithme de match            | 
+-Liste d'amis                   | 
+-Chat                           | 
+-Limitation propositions        | Nicolas
+-Classement                     | 
+-Confirmation de rencontre      | 
+-Notifications                  | 
+-... (N'hésitez pas à ajouter)
