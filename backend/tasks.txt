@@ -1,7 +1,7 @@
 -Algorithme de match            | Geoffrey
 -Liste d'amis                   | 
 -Chat                           | 
--Classement                     | 
+-Classement                     | Ilias
 -Confirmation de rencontre      | 
--Notifications                  | 
+-Notifications                  | Ilias
 -... (N'hésitez pas à ajouter)
