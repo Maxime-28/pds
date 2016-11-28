@@ -1,7 +1,6 @@
--Algorithme de match            | 
+-Algorithme de match            | Geoffrey
 -Liste d'amis                   | 
 -Chat                           | 
--Limitation propositions        | Nicolas
 -Classement                     | 
 -Confirmation de rencontre      | 
 -Notifications                  | 
